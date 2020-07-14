@@ -1,0 +1,31 @@
+<html>
+  <head>
+  <title>Assignment 3- JavaScript program to get the current date.</title>
+  </head>
+  <body>
+<script>
+var current_date = new Date();
+var dd = current_date.getDate();
+
+var mm = current_date.getMonth()+1; 
+var yyyy = current_date.getFullYear();
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+} 
+current_date = mm+'-'+dd+'-'+yyyy;
+console.log(current_date);
+current_date = mm+'/'+dd+'/'+yyyy;
+console.log(current_date);
+current_date = dd+'-'+mm+'-'+yyyy;
+console.log(current_date);
+current_date = dd+'/'+mm+'/'+yyyy;
+console.log(current_date);
+</script>
+  </body>
+  </html>
