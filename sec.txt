@@ -1,0 +1,84 @@
+Methods of Array:
+	concat()		
+		Joins two or more arrays, and returns a copy of the joined arrays
+		Example:
+			var hege = ["Cecilie", "Lone"];
+			var stale = ["Emil", "Tobias", "Linus"];
+			var children = hege.concat(stale);
+	copyWithin()	
+		Copies array elements within the array, to and from specified positions
+		Example:
+			var fruits = ["Banana", "Orange", "Apple", "Mango"];
+			fruits.copyWithin(2, 0);
+	filter()		
+		Creates a new array with every element in an array that pass a test
+		Exampe:
+			var ages = [32, 33, 16, 40];
+			function checkAdult(age) {
+			  return age >= 18;
+			}
+			function myFunction() {
+			  document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+			}
+	isArray()		
+		Checks whether an object is an array
+		Example:
+			function myFunction() 
+			{
+				var fruits = ["Banana", "Orange", "Apple", "Mango"];
+				var x = document.getElementById("demo");
+				x.innerHTML = Array.isArray(fruits);
+			}
+	reverse()		
+		Reverses the order of the elements in an array
+		Example:
+			var fruits = ["Banana", "Orange", "Apple", "Mango"];
+			fruits.reverse();
+			
+	shift()			
+		Removes the first element of an array, and returns that element
+		Example:
+			var fruits = ["Banana", "Orange", "Apple", "Mango"];
+			fruits.shift();
+
+
+Methods of String:
+	A JavaScript string stores a series of characters like "John Doe".
+	Example:
+		var carName1 = "Volvo XC60";
+		var carName2 = 'Volvo XC60';
+	Concat():
+		The concat() method is used to join two or more strings.
+		Example:
+			var str1 = "Hello ";
+			var str2 = "world!";
+			var res = str1.concat(str2);
+	indexOf():
+		The indexOf() method returns the position of the first occurrence of a specified value in a string.
+		This method returns -1 if the value to search for never occurs.
+		The indexOf() method is case sensitive.
+		Example:
+			var str = "Hello world, welcome to the universe.";
+			var n = str.indexOf("welcome");
+	Replace():
+		The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+		Example:
+			var str = "Visit Microsoft!";
+			var res = str.replace("Microsoft", "W3Schools");
+	Split():
+		The split() method is used to split a string into an arra	y of substrings, and returns the new array.
+		If an empty string ("") is used as the separator, the string is split between each character.
+		The split() method does not change the original string.
+		Example:
+			var str = "How are you doing today?";
+			var res = str.split(" ");
+	toString():
+		The toString() method returns the value of a String object.
+		Example:
+			var str = "Hello World!";
+			var res = str.toString();
+	trim():
+		The trim() method removes whitespace from both sides of a string.
+		Example:
+			var str = "       Hello World!        ";
+			alert(str.trim());
