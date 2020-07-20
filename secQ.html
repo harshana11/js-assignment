@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>
+destructure
+</title>
+</head>
+<script>
+const student = {
+  name: 'Helsinki',
+  age: 24,
+  project: {
+    diceGame:"play dice game"
+  }
+};
+function uname({name}) {
+  return name;
+}
+function uage({age}) {
+  return age;
+}
+function fun({name, project: {diceGame}}){
+  return `${name} is ${diceGame}`;
+}
+console.log(uname(student));
+console.log(uage(student));
+console.log(fun(student));
+</script>
+<body>
+</body>
+</html>
