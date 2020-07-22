@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+change page in array list color
+</title>
+</head>
+<script>
+  var c = ["blue", "black", "yellow", "red","orange"];
+
+  function changeColor() {
+    setTimeout(function loop() {
+      document.bgColor = c.shift();
+      if (c.length) {
+        setTimeout(loop, 5000);
+      }
+    }, 5000);
+  }
+
+  function start() {
+    setInterval(changeColor(), 20000);
+  }
+</script>
+
+<body onload="start()">
+<p style="font-size:30px;font-weight:bold;color:gray;">background color was automatically changed in 5 seconds</p>
+</body>
+</html>
